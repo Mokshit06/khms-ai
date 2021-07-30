@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="description" content="Live Captions" />
+    <meta name="title" content="Live Captions" />
+    <title>Live Captions</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h3>Live Captions</h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Information</a></li>
+        <li><a href="/demo.html">Demo</a></li>
+      </ul>
+    </div>
+
+    <section id="home">
+      <img src="./assets/triangle.svg" alt="" class="triangle" />
+      <div class="home-content">
+        <div class="desc" data-aos="fade-right">
+          <h1 class="lg-header">Live Captions</h1>
+          <p>
+            Live Captions generates
+            <span class="strong">closed captions</span> for audio and video
+            elements, right on the user's device. This provides a much better
+            user experience for users who have
+            <span class="strong">hearing impairment</span>, as this can help
+            them know what is being said in the video.
+          </p>
+          <a href="#about" class="learn-btn">Learn more</a>
+        </div>
+        <div class="cover-image" data-aos="fade-left"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="softwares-content">
+        <h1 class="sm-header" data-aos="fade-down">
+          A new way for your devices to be helpful
+        </h1>
+        <p class="info" data-aos="fade-up">
+          Live Captions generates
+          <span class="strong">closed captions</span> for audio and video
+          elements, right on the user's device. This provides a much better user
+          experience for users who have
+          <span class="strong">hearing impairment</span>, as this can help them
+          know what is being said in the video. This would work similar to
+          platforms like Youtube which generate captions but works for every
+          video without needing to upload it anywhere. This can also be made
+          into a <span class="strong">Browser extension</span> which would
+          automatically add captions for every video.
+        </p>
+        <img
+          src="/assets/images/cover.jpg"
+          class="speed-image"
+          data-aos="fade-up"
+        />
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="benefits-content">
+        <h2 class="sm-header" data-aos="fade-down">How does it work?</h2>
+        <p class="info" data-aos="fade-up">
+          Live Captions converts the URL given by user to a Buffer using
+          Node.js, converts the video to an audio using
+          <span class="strong">ffmpeg</span> and then uses
+          <span class="strong">Google Cloud Speech-To-Text API</span> for
+          generating closed captions over that Buffer. It then takes the output
+          of Speech-To-Text API and then converts it to a format called
+          <span class="strong">WebVTT</span> which browsers understand. This way
+          it can generate live captions really efficiently and quickly.
+        </p>
+        <div class="benefits-grid">
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="img-area">
+              <img loading="lazy" src="./assets/icons/speech.png" alt="" />
+            </div>
+            <h2 style="color: #5da9ff">Speech-To-Text</h2>
+            <ul>
+              <li>Generates captions from audio</li>
+              <li>Works really efficiently and is very fast</li>
+              <li>It is very affordable</li>
+            </ul>
+          </div>
+          <div class="benefit-item" data-aos="fade-up">
+            <div class="img-area">
+              <img loading="lazy" src="./assets/icons/ffmpeg.png" alt="" />
+            </div>
+            <h2 style="color: #ff8465">FFMPEG</h2>
+            <ul>
+              <li>Converts video to audio</li>
+              <li>Written in C and is really fast</li>
+              <li>Does really accurate conversion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>View Demo <a href="/demo.html">here</a></p>
+      <p>Thank you for giving your time!</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

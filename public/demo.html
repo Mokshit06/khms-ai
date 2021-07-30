@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script defer src="./js/script.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        background: #36393f;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .submit {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.12rem;
+        padding: 9px 17px;
+        background: #454951;
+        border-radius: 5px;
+        color: #d9dce0;
+        margin-top: 15px;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+        border: none;
+        cursor: pointer;
+      }
+
+      input {
+        padding: 8px;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h3>Live Captions</h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#apps">Information</a></li>
+        <li><a href="/#benefits">Information</a></li>
+        <li><a href="/demo.html">Demo</a></li>
+      </ul>
+    </div>
+    <!-- <video id="video" width="720" height="560" autoplay muted></video> -->
+    <div class="demo-area">
+      <form id="video-form">
+        <input id="video-url" type="text" />
+        <button class="submit">Generate</button>
+      </form>
+      <div id="video-output"></div>
+    </div>
+  </body>
+</html>
